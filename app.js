@@ -28,7 +28,7 @@ permEl.textContent = typeof Notification === "undefined" ? "no soportado" : Noti
 
 let swReg = null;
 if ("serviceWorker" in navigator) {
-  swReg = await navigator.serviceWorker.register("/firebase-messaging-sw.js");
+  swReg = await navigator.serviceWorker.register("./firebase-messaging-sw.js");
 }
 
 const supported = await isSupported();
